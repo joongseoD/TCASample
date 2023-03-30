@@ -11,6 +11,12 @@
 		C94E170829D04E3C00B1D0F0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E170729D04E3C00B1D0F0 /* ContentView.swift */; };
 		C94E170A29D04E3D00B1D0F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94E170929D04E3D00B1D0F0 /* Assets.xcassets */; };
 		C94E170D29D04E3D00B1D0F0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C94E170C29D04E3D00B1D0F0 /* Preview Assets.xcassets */; };
+		C94E171529D04EA100B1D0F0 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = C94E171429D04EA100B1D0F0 /* ComposableArchitecture */; };
+		C94E171B29D2BD2400B1D0F0 /* PaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E171A29D2BD2400B1D0F0 /* PaletteView.swift */; };
+		C94E171D29D2BD4100B1D0F0 /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E171C29D2BD4100B1D0F0 /* ColorView.swift */; };
+		C94E171F29D2C20800B1D0F0 /* PaletteFilerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E171E29D2C20800B1D0F0 /* PaletteFilerView.swift */; };
+		C94E172129D2C31500B1D0F0 /* PaletteFilterChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E172029D2C31500B1D0F0 /* PaletteFilterChipView.swift */; };
+		C94E172329D2DC0D00B1D0F0 /* ColorService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C94E172229D2DC0D00B1D0F0 /* ColorService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,11 @@
 		C94E170729D04E3C00B1D0F0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C94E170929D04E3D00B1D0F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C94E170C29D04E3D00B1D0F0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C94E171A29D2BD2400B1D0F0 /* PaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteView.swift; sourceTree = "<group>"; };
+		C94E171C29D2BD4100B1D0F0 /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
+		C94E171E29D2C20800B1D0F0 /* PaletteFilerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteFilerView.swift; sourceTree = "<group>"; };
+		C94E172029D2C31500B1D0F0 /* PaletteFilterChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaletteFilterChipView.swift; sourceTree = "<group>"; };
+		C94E172229D2DC0D00B1D0F0 /* ColorService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C94E171529D04EA100B1D0F0 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +63,13 @@
 		C94E170429D04E3C00B1D0F0 /* TCASample */ = {
 			isa = PBXGroup;
 			children = (
-				C94E170529D04E3C00B1D0F0 /* TCASampleApp.swift */,
 				C94E170729D04E3C00B1D0F0 /* ContentView.swift */,
+				C94E170529D04E3C00B1D0F0 /* TCASampleApp.swift */,
+				C94E171A29D2BD2400B1D0F0 /* PaletteView.swift */,
+				C94E171C29D2BD4100B1D0F0 /* ColorView.swift */,
+				C94E171E29D2C20800B1D0F0 /* PaletteFilerView.swift */,
+				C94E172029D2C31500B1D0F0 /* PaletteFilterChipView.swift */,
+				C94E172229D2DC0D00B1D0F0 /* ColorService.swift */,
 				C94E170929D04E3D00B1D0F0 /* Assets.xcassets */,
 				C94E170B29D04E3D00B1D0F0 /* Preview Content */,
 			);
@@ -83,6 +100,9 @@
 			dependencies = (
 			);
 			name = TCASample;
+			packageProductDependencies = (
+				C94E171429D04EA100B1D0F0 /* ComposableArchitecture */,
+			);
 			productName = TCASample;
 			productReference = C94E170229D04E3C00B1D0F0 /* TCASample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +131,9 @@
 				Base,
 			);
 			mainGroup = C94E16F929D04E3C00B1D0F0;
+			packageReferences = (
+				C94E171329D04EA100B1D0F0 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = C94E170329D04E3C00B1D0F0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +160,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C94E171B29D2BD2400B1D0F0 /* PaletteView.swift in Sources */,
+				C94E171F29D2C20800B1D0F0 /* PaletteFilerView.swift in Sources */,
 				C94E170829D04E3C00B1D0F0 /* ContentView.swift in Sources */,
 				C94E170629D04E3C00B1D0F0 /* TCASampleApp.swift in Sources */,
+				C94E172329D2DC0D00B1D0F0 /* ColorService.swift in Sources */,
+				C94E172129D2C31500B1D0F0 /* PaletteFilterChipView.swift in Sources */,
+				C94E171D29D2BD4100B1D0F0 /* ColorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C94E171329D04EA100B1D0F0 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C94E171429D04EA100B1D0F0 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C94E171329D04EA100B1D0F0 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C94E16FA29D04E3C00B1D0F0 /* Project object */;
 }
