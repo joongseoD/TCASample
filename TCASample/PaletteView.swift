@@ -8,7 +8,7 @@ struct Palette: ReducerProtocol {
         var filter: PaletteFilter.State?
         var colorsCache: [ColorViewFeature.State] = []
     }
-    
+    // CCCCCCC
     enum Action {
         case fetch
         case updateColors([ColorViewFeature.State])
