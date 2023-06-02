@@ -19,6 +19,7 @@ struct Palette: ReducerProtocol {
     @Dependency(\.colorService) var colorService
     // A Test
     // AAAAAA
+    // AAAAAA
     var body: some ReducerProtocol<State, Action> {
         Reduce { state, action in
             switch action {
