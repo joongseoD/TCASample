@@ -29,7 +29,7 @@ struct Palette: ReducerProtocol {
                     await send(.updateColors(colors))
                     await send(.updateFilters(colors))
                 }
-                
+                // test 222222
             case let .updateColors(colors):
                 state.colors = IdentifiedArrayOf(
                     uniqueElements: colors
