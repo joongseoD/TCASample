@@ -17,7 +17,8 @@ struct Palette: ReducerProtocol {
     }
     
     @Dependency(\.colorService) var colorService
-    
+    // A Test
+    // AAAAAA
     var body: some ReducerProtocol<State, Action> {
         Reduce { state, action in
             switch action {
@@ -29,13 +30,12 @@ struct Palette: ReducerProtocol {
                     await send(.updateColors(colors))
                     await send(.updateFilters(colors))
                 }
-                // test 222222
+                
             case let .updateColors(colors):
                 state.colors = IdentifiedArrayOf(
                     uniqueElements: colors
                 )
-                // test 1
-                // test 1-1
+                
                 return .none
                 
             case let .updateFilters(colors):
