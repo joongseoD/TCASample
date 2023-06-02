@@ -1,6 +1,6 @@
 import SwiftUI
 import ComposableArchitecture
-
+// B Test BBBB
 struct Palette: ReducerProtocol {
     struct State: Equatable {
         var colors: IdentifiedArrayOf<ColorViewFeature.State> = []
