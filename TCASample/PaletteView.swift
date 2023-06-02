@@ -35,6 +35,7 @@ struct Palette: ReducerProtocol {
                     uniqueElements: colors
                 )
                 // test 1
+                // test 1-1
                 return .none
                 
             case let .updateFilters(colors):
